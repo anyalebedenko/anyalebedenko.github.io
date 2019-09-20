@@ -1,0 +1,151 @@
+h1 {
+  font-size: 24px;
+  font-weight: normal;
+  font-style: italic;
+  color: gray;
+  padding-top: 20px;
+}
+h2 {
+  font-size: 36px;
+  font-weight: normal;
+  color: red;
+}
+h3 {
+  font-size: 18px;
+  font-weight: normal;
+  color: gray;
+}
+p {
+  font-size: 14px;
+  font-weight: normal;
+  color: grey;
+  text-decoration: none;
+}
+li{
+color:grey;
+}
+#menu li{
+  float: right;
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+  margin-top: -20px;
+  color: grey;
+  font-size: 18px;
+}
+.body{
+    padding-left: 10px;
+    border-left: 1px solid lightgrey;
+}
+a.info
+{
+	text-decoration: none;
+}
+p.info {
+	color: gray;
+		text-decoration-style: dotted;
+}
+#content {
+	margin-bottom: 10px;
+}
+p
+{
+	padding-left: 15px;
+}
+.col
+{
+	width: 33%;
+	display: inline-block;
+}
+div.post a{
+  color: red;
+  text-decoration: none;
+}
+div#content ul#menu a {
+	color: gray;
+	text-decoration: none;
+}
+div#content ul#menu a:hover {
+	color: blue;
+}
+div.details.info a
+{
+	color: gray;
+}
+div.col a {
+	color: black;
+	text-decoration: none;
+}
+p.det {
+	color: red;
+}
+p.det a{
+	color: red;
+}
+#footer a[title="ACOI KПI"]
+{
+   color: red;
+   text-decoration: none;
+}
+#footer a[title="ACOI KПI"]:hover
+{
+   color: blue;
+   text-decoration: none;
+}
+
+.post{
+    grid-column: 1/span 3;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+#footer{
+    grid-column: 1/span 3;
+    position: fixed;
+    bottom: 0px;
+    border-top: 1px solid lightgray;
+    background-color: white;
+    width:100%;
+}
+
+.post{
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 100%;
+    padding: 10px;
+    grid-gap: 10px;
+	width:100%;
+}
+@media screen and (max-width: 1000px){
+    H1{
+        grid-column: 1/span 3;
+    }
+
+    #menu{
+        grid-column: 1/span 3;
+    }
+
+    .post{
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+    }
+    .body{
+        padding-left: 0px;
+        border-left: 0px;
+    }
+    .col{
+        grid-column: 1/span 3;
+    }
+}
+
+
+p.det a:hover, p.det:hover, #footer a[title="ACOIУ KПI"]:hover, div.post a:hover, div.details a:hover { 
+ color: blue;
+}
+p.info a{
+	color: gray;
+	border-bottom: 1px dotted lightgray;
+}
+#content {
+	position: relative;
+}
